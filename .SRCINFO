@@ -1,0 +1,27 @@
+pkgbase = gitdesktop
+	pkgdesc = AI-native, keyboard-first Git desktop client (built from source)
+	pkgver = 0.8.0
+	pkgrel = 1
+	url = https://github.com/theBGuy/GitDesktop
+	arch = x86_64
+	license = Apache-2.0
+	makedepends = rust
+	makedepends = nodejs
+	makedepends = pnpm
+	makedepends = pkgconf
+	depends = gtk3
+	depends = webkit2gtk-4.1
+	depends = libappindicator-gtk3
+	depends = libayatana-appindicator
+	depends = openssl
+	depends = hicolor-icon-theme
+	optdepends = git: core version control
+	optdepends = github-cli: GitHub PR/Actions integration
+	optdepends = glab: GitLab integration
+	conflicts = gitdesktop-bin
+	options = !lto
+	options = !debug
+	source = gitdesktop-0.8.0.tar.gz::https://github.com/theBGuy/GitDesktop/archive/refs/tags/v0.8.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = gitdesktop
